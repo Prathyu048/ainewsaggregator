@@ -1,0 +1,29 @@
+news-ai-hackathon/
+├── client/                      # React Frontend
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Dashboard/
+│   │   │   │   ├── Dashboard.jsx
+│   │   │   │   └── Dashboard.css
+│   │   │   ├── NewsCard/
+│   │   │   │   ├── NewsCard.jsx
+│   │   │   │   └── NewsCard.css
+│   │   │   └── Analytics/
+│   │   │       ├── Analytics.jsx
+│   │   │       └── Analytics.css
+│   │   ├── services/
+│   │   │   └── api.js
+│   │   └── App.js
+│   └── package.json
+├── server/                      # Node.js Backend
+│   ├── src/
+│   │   ├── models/
+│   │   │   └── Article.js
+│   │   ├── routes/
+│   │   │   └── api.js
+│   │   ├── services/
+│   │   │   ├── newsService.js
+│   │   │   └── nlpService.js
+│   │   └── app.js
+│   └── package.json
+└── README.md 

@@ -1,0 +1,75 @@
+.topic-sidebar {
+  width: 250px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 15px;
+}
+
+.topic-section {
+  margin-bottom: 20px;
+}
+
+.topic-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.topic-header:hover, .topic-header.active {
+  background: #f5f5f5;
+  color: #1976d2;
+}
+
+.topic-header svg {
+  font-size: 1.2em;
+}
+
+.subtopics {
+  margin-left: 30px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.subtopic-btn {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #666;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.subtopic-btn:hover {
+  background: #f5f5f5;
+  color: #1976d2;
+}
+
+@media (prefers-color-scheme: dark) {
+  .topic-sidebar {
+    background: #1a1a1a;
+    color: #e0e0e0;
+  }
+
+  .topic-header:hover, .topic-header.active {
+    background: #333;
+    color: #64b5f6;
+  }
+
+  .subtopic-btn {
+    color: #ccc;
+  }
+
+  .subtopic-btn:hover {
+    background: #333;
+    color: #64b5f6;
+  }
+} 

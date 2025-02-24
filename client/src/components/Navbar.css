@@ -1,0 +1,113 @@
+.navbar {
+  background-color: #1976d2; /* Dark blue background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding for navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between; /* Space between logo and menu */
+  align-items: center;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Space between logo and menu */
+  align-items: center;
+  width: 100%; /* Ensure it takes full width */
+}
+
+.navbar-logo {
+  font-size: 1.5rem; /* Larger font size for logo */
+  font-weight: bold; /* Bold text */
+  display: flex;
+  align-items: center;
+  color: white; /* Center logo vertically */
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  gap: 20px; /* Space between menu items */
+}
+
+.nav-item {
+  color: white; /* White text for nav items */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.2s; /* Smooth transition for hover */
+}
+
+.nav-item:hover {
+  color: #e3f2fd; /* Light blue on hover */
+}
+
+.language-selector {
+  display: flex;
+  align-items: center;
+}
+
+.language-selector label {
+  margin-right: 10px;
+  color: white;
+}
+
+.language-selector select {
+  padding: 5px;
+  border-radius: 4px;
+  border: none;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar-menu {
+    display: none; /* Hide menu on small screens */
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .navbar {
+    background-color: #1a1a1a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar-logo {
+    color: #64b5f6;
+  }
+
+  .nav-item {
+    color: #e0e0e0;
+  }
+
+  .nav-item:hover {
+    background-color: #333;
+    color: #64b5f6;
+  }
+
+  .language-selector {
+    color: #e0e0e0;
+  }
+
+  .language-select {
+    background-color: #333;
+    color: #e0e0e0;
+    border-color: #444;
+  }
+
+  .menu-toggle {
+    color: #e0e0e0;
+  }
+} 
